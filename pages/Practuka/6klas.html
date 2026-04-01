@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 клас</title>
+
+  <link rel="stylesheet" href="../../style.css">
+
+  <style>
+    body {
+      background: #0f172a;
+      color: #fff;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background: #0b1321;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-title img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-left: 4px solid #1abc9c;
+      padding: 25px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      color: #1abc9c;
+      text-align: center;
+    }
+
+    .card p {
+      text-indent: 30px;
+      margin-bottom: 10px;
+    }
+
+    .image {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .file-link {
+      display: block;
+      margin: 10px 0;
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    .file-link:hover {
+      text-decoration: underline;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #1abc9c;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background: #16a085;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-title">
+    <img src="../../gangster.jpg">
+    <h1>6 клас</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Головна</a></li>
+      <li><a href="practice.html">Практика</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+
+  <div class="card">
+    <h2>Матеріали для  класу</h2>
+
+    <p>Тут ти можеш додавати свої матеріали, пояснення, завдання.</p>
+
+    <!-- 🔴 ФОТО -->
+    <img src="../../images/photo1.jpg" class="image">
+
+    <!-- 🔴 ФАЙЛИ -->
+    <a href="../../files/file1.pdf" target="_blank" class="file-link">📄 Завдання 1</a>
+    <a href="../../files/file2.docx" target="_blank" class="file-link">📄 Завдання 2</a>
+
+  </div>
+
+
+</main>
+
+</body>
+</html>

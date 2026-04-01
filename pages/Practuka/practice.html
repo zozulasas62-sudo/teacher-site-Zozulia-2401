@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практика | Сайт вчителя інформатики</title>
+
+  <!-- ОСНОВНИЙ СТИЛЬ -->
+  <link rel="stylesheet" href="../../style.css">
+
+  <style>
+    body {
+      background: #0f172a;
+      color: #fff;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background: #0b1321;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-title img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .material-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-left: 4px solid #1abc9c;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .material-card:hover {
+      transform: scale(1.01);
+      background: rgba(26, 188, 156, 0.15);
+    }
+
+    .material-card h2 {
+      color: #1abc9c;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .material-card p {
+      text-indent: 50px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .lesson-image {
+      display: block;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 12px;
+    }
+
+    .btns {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #1abc9c;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #16a085;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b1321;
+      margin-top: 40px;
+    }
+
+  body {
+    background: #0f172a;
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+  }
+
+  header {
+    background: #0b1321;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 2px solid #1abc9c;
+  }
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-title img {
+    height: 50px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #1abc9c;
+  }
+
+  .content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  /* КАРТКА */
+  .material-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #1abc9c;
+    padding: 40px 35px; /* 🔥 БІЛЬШІ ВІДСТУПИ */
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+
+  .material-card:hover {
+    transform: scale(1.01);
+    background: rgba(26, 188, 156, 0.15);
+  }
+
+  .material-card h2 {
+    color: #1abc9c;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .material-card p {
+    text-indent: 40px;
+    margin-bottom: 18px;
+    line-height: 1.7;
+  }
+
+  /* 🔥 ФОТО (МЕНШІ + ГОРИЗОНТАЛЬНІ) */
+  .lesson-image {
+    display: block;
+  margin: 10px auto;
+  width: 400%;
+  max-width: 700px;
+  height: auto;        /* 🔥 важливо */
+  border-radius: 12px;
+  }
+
+  /* КНОПКИ */
+  .btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    padding: 20px; /* 🔥 ВІДСТУП ВІД КРАЇВ */
+  }
+
+  .btn {
+    background: #1abc9c;
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background: #16a085;
+    transform: scale(1.05);
+  }
+
+  /* БЛОК ФАЙЛІВ */
+  .material-card a {
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px;
+    background: #0b1321;
+    margin-top: 50px;
+  }
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-title">
+    <img src="../../gangster.jpg" alt="Логотип">
+    <h1>Практика</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Головна</a></li>
+      <li><a href="../students/5-8.html">5-8 клас</a></li>
+      <li><a href="../aboutMe/biography.html">Про мене</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+
+  <div class="material-card">
+
+    <h2>Педагогічна практика</h2>
+
+    <p>Я, здобувач вищої освіти, проходив педагогічну практику у закладі загальної середньої освіти, де мав можливість спробувати себе у ролі вчителя інформатики та класного керівника. Дана практика стала важливим етапом у моєму професійному становленні, оскільки дала змогу поєднати теоретичні знання з реальним досвідом.</p>
+
+    <p>Під час проходження практики я ознайомився з організацією освітнього процесу, особливостями роботи вчителя інформатики, плануванням уроків та веденням документації. Я проводив уроки та виховні заходи, використовуючи сучасні підходи до навчання.</p>
+
+    <img src="../../зображення_viber_2026-03-31_21-33-28-660.jpg" alt="Практика" class="lesson-image">
+
+    <p>Особливо хочеться відзначити підтримку вчительки інформатики, яка допомагала мені у підготовці до уроків і ділилася своїм досвідом. Завдяки цьому я зміг краще зрозуміти професію вчителя.</p>
+
+    <p>Учні 6-А класу були активними, вихованими та зацікавленими у навчанні. Робота з ними принесла багато позитивних емоцій.</p>
+
+    <img src="../../зображення_viber_2026-03-31_21-33-28-843.jpg" alt="Практика" class="lesson-image">
+
+    <p>Загалом практика була дуже корисною. Вона допомогла мені розвинути педагогічні навички, комунікацію та відповідальність.</p>
+
+  </div>
+
+  <!-- КНОПКИ -->
+  <div class="btns">
+    <a href="https://drive.google.com/drive/folders/1mjpxtzRYvQOxIdZjg7nVCJhIxWwuhxZw?usp=drive_link" target="_blank" class="btn">5 клас</a>
+    <a href="https://drive.google.com/drive/folders/190gVJFDsg8MHfvJ_7BH7F_9I20GLU8pK?usp=drive_link" target="_blank" class="btn">6 клас</a>
+    <a href="https://drive.google.com/drive/folders/192oA1UJkmzIV-TVp8LRK4ZuJGA5Z9O8O?usp=drive_link" class="btn">Навчальні матеріали</a>
+  </div>
+
+<footer>
+  <p>© 2026 Вчитель інформатики. Всі права захищені.</p>
+</footer>
+
+</body>
+</html>

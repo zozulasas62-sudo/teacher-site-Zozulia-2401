@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Планування для вчителів</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    body {
+      background: #0f172a;
+      color: #fff;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    header {
+      background: #0b1321;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-title img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1abc9c;
+    }
+
+    .search-container {
+      text-align: right;
+      margin: 10px 20px;
+    }
+
+    .search-container input {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #1abc9c;
+      background: #0b1321;
+      color: #fff;
+      width: 250px;
+    }
+
+    .planning-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-left: 4px solid #1abc9c;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .planning-card:hover {
+      transform: scale(1.02);
+      background: rgba(26, 188, 156, 0.15);
+    }
+
+    .planning-card h3 {
+      color: #1abc9c;
+      margin-bottom: 10px;
+    }
+
+    .planning-card p {
+      margin-bottom: 8px;
+    }
+
+    .planning-card a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .planning-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Фільтр */
+    .filter-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .filter-container select {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #1abc9c;
+      background: #0b1321;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="gangster.jpg" alt="Логотип">
+      <h1>Планування для вчителів</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Головна</a></li>
+        <li><a href="../students/5-8.html">5–8 клас</a></li>
+        <li><a href="../students/9-11.html">9–11 клас</a></li>
+        <li><a href="../aboutMe/biography.html">Про мене</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Пошук по плануваннях...">
+  </div>
+
+  <main class="content">
+    <h2>Каленарно-тематичні планування</h2>
+
+    <div class="filter-container">
+      <select id="filter-class">
+        <option value="all">Всі класи</option>
+        <option value="5-6">5–6 клас</option>
+        <option value="7-8">7–8 клас</option>
+        <option value="9-11">9–11 клас</option>
+      </select>
+
+      <select id="filter-author">
+        <option value="all">Всі автори</option>
+        <option value="author1">Ривкінд І.</option>
+        <option value="author2">Морзе П.</option>
+        <option value="author3">Пасічник О.В..</option>
+        <option value="author4">Бондаренко О.О</option>
+      </select>
+    </div>
+
+    <!-- Планування -->
+    <div class="planning-card" data-class="5-6" data-author="author1">
+      <h3>Інформатика – 5 клас</h3>
+      <p>Автор: Ривкінд Й. Я.</p>
+      <p>Файл: PDF конспект з календарно-тематичним плануванням.</p>
+      <a href="https://www.geneza.ua/sites/default/files/ebooks/%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0_5%20%D0%BA%D0%BB%D0%B0%D1%81_%D0%93%D0%B5%D0%BD%D0%B5%D0%B7%D0%B0.pdf" target="_blank">📄 Підручник</a>
+      <a href="https://drive.google.com/file/d/1zofKRdewMVe0fzvJDZ3seQC_zJ69HpFK/view" target="_blank">📄 Планування</a>
+    </div>
+
+    <div class="planning-card" data-class="5-6" data-author="author2">
+      <h3>Інформатика – 5 клас</h3>
+      <p>Автор: Морзе Н. В.</p>
+      <p>Файл: PDF конспект з календарно-тематичним плануванням.</p>
+      <a href="https://informatik.pp.ua/pidruchniki/5-klas/pidruchnyk-informatyka-5-klas-morze-2022/" target="_blank">📄 Підручник</a>
+      <a href="https://docs.google.com/document/d/1t5lwVLLxDieEFg4AJdOk1WX0qcFPRNDc/edit" target="_blank">📄 Планування</a>
+    </div>
+
+    <div class="planning-card" data-class="5-6" data-author="author1">
+      <h3>Інформатика – 6 клас</h3>
+      <p>Автор: Ривкінд Й. Я.</p>
+      <p>Файл: PDF конспект з календарно-тематичним плануванням.</p>
+      <a href="https://schoolbook.in.ua/wp-content/uploads/2023/08/%D0%A0%D0%B8%D0%B2%D0%BA%D1%96%D0%BD%D0%B4_%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0_%D0%9F_6.pdf" target="_blank">📄 Підручник</a>
+      <a href="https://drive.google.com/file/d/1_hti1fXksIqCx1eg6FPgH4J9i7_VOiCY/view" target="">📄 Планування</a>
+    </div>
+
+     <div class="planning-card" data-class="5-6" data-author="author2">
+    <h3>Інформатика – 6 клас</h3>
+      <p>Автор: Морзе Н.В.</p>
+      <p>Файл: PDF конспект календарно-тематичного плану.</p>
+      <a href="https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html" target="_blank">📄 Підручник</a>
+      <a href="https://www.schoollife.org.ua/kalendarno-tematychne-planuvannya-urokiv-informatyky-6-klas-nush-nova-ukrayinska-shkola-2/" target="_blank">📄 Планування</a>
+    </div>
+
+    <div class="planning-card" data-class="7-8" data-author="author1">
+      <h3>Інформатика – 7 клас</h3>
+      <p>Автор: Ривкінд Й. Я.</p>
+      <p>Файл: PDF конспект календарно-тематичного плану.</p>
+      <a href="https://pidruchnyk.com.ua/1487-informatyka-ryvknd-7-klas-2020.html" target="_blank">📄 Підручник</a>
+      <a href="https://docs.google.com/document/d/1HSirUHuospG8ZXLye3ue-_ivNj9Dj_fygT7yz9IcztA/view?tab=t.0" target="_blank">📄 Планування</a>
+    </div>
+
+    <div class="planning-card" data-class="7-8" data-author="author3">
+      <h3>Інформатика – 7 клас</h3>
+      <p>Автор: Пасічник О.В.</p>
+      <p>Файл: PDF конспект календарно-тематичного плану.</p>
+      <a href="https://drive.google.com/file/d/113brEC_46X8WS0rqWyonm-ytGLu9b39Z/view" target="_blank">📄 Підручник</a>
+      <a href="https://docs.google.com/document/d/14kTXYMgMZYxJ-woAdh8jxJUrxPJAZEvs3NovtXZw3TQ/view?tab=t.0" target="_blank">📄 Планування</a>
+    </div>
+
+    <div class="planning-card" data-class="7-8" data-author="author1">
+      <h3>Інформатика – 8 клас</h3>
+      <p>Автор: Ривкінд Й.Я.</p>
+      <p>Файл: PDF конспект календарно-тематичного плану.</p>
+      <a href="https://informatik.pp.ua/pidruchniki/8-klas/pidruchnyk-informatyka-8-klas-ryvkind-2025/" target="_blank">📄 Підручник</a>
+      <a href="https://docs.google.com/document/d/1cw27_Urakc89o4dQ3o7olj0Yzo-OrzC36iboSBp3AUY/edit?tab=t.0" target="_blank">📄 Планування</a>
+    </div>
+
+    <div class="planning-card" data-class="9-11" data-author="author4">
+      <h3>Інформатика – 9 клас</h3>
+      <p>Автор: Бондаренко О.О</p>
+      <p>Файл: PDF календарно-тематичне планування.</p>
+      <a href="https://pidruchnyk.com.ua/3128-informatyka-9-klas-bondarenko.html" target="_blank">📄 Підручник</a>
+      <a href="https://www.schoollife.org.ua/kalendarno-tematychnyj-plan-z-informatyky-dlya-9-klasu/" target="_blank">📄 Планування</a>
+    </div>
+
+  </main>
+
+  <script>
+    // Пошук по тексту
+    const searchInput = document.getElementById("searchInput");
+    searchInput.addEventListener("input", function () {
+      const term = this.value.toLowerCase();
+      const cards = document.querySelectorAll(".planning-card");
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(term) ? "block" : "none";
+      });
+    });
+
+    // Фільтр по класах та автору
+    const filterClass = document.getElementById("filter-class");
+    const filterAuthor = document.getElementById("filter-author");
+
+    function filterCards() {
+      const selectedClass = filterClass.value;
+      const selectedAuthor = filterAuthor.value;
+      const cards = document.querySelectorAll(".planning-card");
+
+      cards.forEach(card => {
+        const matchClass = selectedClass === "all" || card.dataset.class === selectedClass;
+        const matchAuthor = selectedAuthor === "all" || card.dataset.author === selectedAuthor;
+        card.style.display = (matchClass && matchAuthor) ? "block" : "none";
+      });
+    }
+
+    filterClass.addEventListener("change", filterCards);
+    filterAuthor.addEventListener("change", filterCards);
+  </script>
+
+</body>
+</html>
